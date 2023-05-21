@@ -1,7 +1,7 @@
 <?php 
 $title = 'My Blog';
 $numberOfPosts = 10;
-$numberOfPostsText = $numberOfPosts . ' posts'
+$numberOfPostsText = "\"$numberOfPosts\" posts"
 ?>
 
 <h1><?= $title ?></h1>
