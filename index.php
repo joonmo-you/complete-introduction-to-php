@@ -1,10 +1,8 @@
 <?php 
 $title = 'My Blog';
-$numberOfPosts = 10 * '10';
+$numberOfPosts = 10;
+$numberOfPostsText = $numberOfPosts . ' posts'
 ?>
 
 <h1><?= $title ?></h1>
-<h2><?= $numberOfPosts ?></h2>
-
-<p><?= gettype($title) ?></p>
-<p><?= gettype($numberOfPosts) ?></p>
+<h2><?= $numberOfPostsText ?></h2>
