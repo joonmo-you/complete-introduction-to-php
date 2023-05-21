@@ -1,6 +1,6 @@
 <?php 
-$title = (int) 'My Blog';
-$numberOfPosts = (string) 10;
+$title = 'My Blog';
+$numberOfPosts = 10 * '10';
 ?>
 
 <h1><?= $title ?></h1>
