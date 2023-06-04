@@ -9,12 +9,12 @@ const MAX_NUM_POSTS = 100;
 
 <h1><?= $title ?></h1>
 <h2><?= $numberOfPostsText ?></h2>
-<?php
-if ($numberOfPosts === 3) {
-  echo "There are exactly 3 posts.";
-} elseif ($hasPosts) {
-  echo "Post exists.";
-} else {
-  echo "There are no posts.";
-}
-?>
+<?php if ($hasPosts): ?>
+  <?php if ($numberOfPosts === 3): ?>
+    There are exactly 3 posts.
+  <?php else: ?>
+    Posts exists.
+  <?php endif ?>
+<?php else: ?>
+      There are no posts.
+<?php endif ?>
